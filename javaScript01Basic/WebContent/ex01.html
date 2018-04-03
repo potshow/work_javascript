@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>예제01</title>
+</head>
+<body>
+	
+	<script>
+		var a = new Array();
+		var b = new Array();
+		var c = new Array();
+		
+		var a = [1, 2, 3, 4, 5];
+		
+		for (i = 0; i < 5; i++) {
+			var item = a.pop();
+			b.push(item);
+		}
+		console.log(b);
+		
+		
+		for (i = 0; i < 5; i++) {
+			c[i] = b.pop();
+		}
+		console.log(c);
+		
+		for (var i = 0; i < a.length; i++) {
+			console.log(a[i]);
+		}
+		
+		for (var i = 0; i < b.length; i++) {
+			console.log(b[i]);
+		}
+		
+		for (var i = 0; i < c.length; i++) {
+			console.log(c[i]);
+		}
+	</script>
+</body>
+</html>
